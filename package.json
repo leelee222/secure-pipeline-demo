@@ -1,0 +1,28 @@
+{
+  "name": "secure-pipeline-demo",
+  "version": "1.0.0",
+  "description": "A hands-on project to build a **secure CI/CD pipeline** with GitHub Actions, Docker, and Kubernetes. This repo is part of my **3-Month DevSecOps Journey**.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leelee222/secure-pipeline-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leelee222/secure-pipeline-demo/issues"
+  },
+  "homepage": "https://github.com/leelee222/secure-pipeline-demo#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+   "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  }
+}
