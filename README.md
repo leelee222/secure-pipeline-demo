@@ -57,7 +57,3 @@ This repo is part of my **3-Month DevSecOps Journey**.
 * **Orchestration (later)**: Kubernetes (Minikube)
 
 ---
-
-👉 This way, every week you just **check things off** and push commits. By Week 4, you’ll have a clean README that doubles as your portfolio proof.
-
-Do you want me to also add a **“How to Run Locally”** section now (for the simple Node.js/Python app), so recruiters can test it easily later?
