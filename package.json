@@ -2,10 +2,10 @@
   "name": "secure-pipeline-demo",
   "version": "1.0.0",
   "description": "A hands-on project to build a **secure CI/CD pipeline** with GitHub Actions, Docker, and Kubernetes. This repo is part of my **3-Month DevSecOps Journey**.",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "jest"
+    "start": "node server.js",
+    "test": "jest --runInBand"
   },
   "repository": {
     "type": "git",
