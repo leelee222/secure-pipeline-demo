@@ -9,7 +9,7 @@ This repo is part of my **3-Month DevSecOps Journey**.
 
 ### ✅ Week 1 – CI/CD Security Basics
 
-* [ ] Setup Node.js/Python app repo
+* [x] Setup Node.js/Python app repo
 * [ ] GitHub Actions CI/CD (build + test)
 * [ ] SonarQube static analysis
 * [ ] Trivy/Snyk dependency scanning
