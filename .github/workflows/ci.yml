@@ -27,7 +27,7 @@ jobs:
         run: npm test -- --coverage
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarqube-scan-action@e8c3b24a692e4c7f2a66c695a23f721efbfa9a6b
+        uses: SonarSource/sonarcloud-github-action@v2
         with:
           args: >
             -Dsonar.organization=leelee222
