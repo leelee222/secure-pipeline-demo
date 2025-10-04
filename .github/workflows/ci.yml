@@ -34,3 +34,19 @@ jobs:
             -Dsonar.projectKey=leelee222_secure-pipeline-demo
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+            
+      - name: Trivy FS Scan (Dependencies)
+        uses: aquasecurity/trivy-action@0.20.0
+        with:
+          scan-type: fs
+          ignore-unfixed: true
+          format: table
+          exit-code: 1
+          severity: HIGH,CRITICAL
+
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/node@master
+        with:
+          command: test
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
