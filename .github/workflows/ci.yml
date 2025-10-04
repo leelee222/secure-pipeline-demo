@@ -45,7 +45,7 @@ jobs:
           severity: HIGH,CRITICAL
 
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/node@master
+        uses: snyk/actions/node@v3
         with:
           command: test
         env:
