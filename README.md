@@ -11,7 +11,7 @@ This repo is part of my **3-Month DevSecOps Journey**.
 
 * [x] Setup Node.js/Python app repo
 * [x] GitHub Actions CI/CD (build + test)
-* [ ] SonarQube static analysis
+* [x] SonarQube static analysis
 * [ ] Trivy/Snyk dependency scanning
 * [ ] GitLeaks secret detection
 * [ ] Pipeline fails on vulnerabilities
