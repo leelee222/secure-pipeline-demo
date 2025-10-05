@@ -13,7 +13,7 @@ This repo is part of my **3-Month DevSecOps Journey**.
 * [x] GitHub Actions CI/CD (build + test)
 * [x] SonarQube static analysis
 * [x] Trivy/Snyk dependency scanning
-* [ ] GitLeaks secret detection
+* [x] GitLeaks secret detection
 * [ ] Pipeline fails on vulnerabilities
 * [ ] Document pipeline in README
 
