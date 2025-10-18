@@ -5,6 +5,11 @@ This repo is part of my **3-Month DevSecOps Journey**.
 
 ---
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ilham_secure-pipeline-demo&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ilham_secure-pipeline-demo)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ilham_secure-pipeline-demo&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ilham_secure-pipeline-demo)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ilham_secure-pipeline-demo&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ilham_secure-pipeline-demo)
+
+
 ## 📅 Roadmap Progress
 
 ### ✅ Week 1 – CI/CD Security Basics
@@ -14,15 +19,15 @@ This repo is part of my **3-Month DevSecOps Journey**.
 * [x] SonarQube static analysis
 * [x] Trivy/Snyk dependency scanning
 * [x] GitLeaks secret detection
-* [ ] Pipeline fails on vulnerabilities
-* [ ] Document pipeline in README
+* [x] Pipeline fails on vulnerabilities
+* [x] Document pipeline in README
 
 ---
 
 ### 🔄 Week 2 – Container Security *(in progress)*
 
-* [ ] Dockerize the app with a secure Dockerfile
-* [ ] Scan image with Trivy/Clair
+* [x] Dockerize the app with a secure Dockerfile
+* [x] Scan image with Trivy/Clair
 * [ ] Fix vulnerabilities and harden image
 * [ ] Push image to DockerHub
 * [ ] Document Docker security practices
