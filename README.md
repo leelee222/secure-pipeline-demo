@@ -5,9 +5,9 @@ This repo is part of my **3-Month DevSecOps Journey**.
 
 ---
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ilham_secure-pipeline-demo&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ilham_secure-pipeline-demo)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ilham_secure-pipeline-demo&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ilham_secure-pipeline-demo)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ilham_secure-pipeline-demo&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ilham_secure-pipeline-demo)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=leelee222_secure-pipeline-demo&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=leelee222_secure-pipeline-demo)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=leelee222_secure-pipeline-demo&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=leelee222_secure-pipeline-demo)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=leelee222_secure-pipeline-demo&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=leelee222_secure-pipeline-demo)
 
 
 ## 📅 Roadmap Progress
