@@ -21,10 +21,10 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci --prefer-offline
 
       - name: Run tests with coverage
-        run: npm test -- --coverage
+        run: npm run test:coverage
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
@@ -89,24 +89,33 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and tag image
+        env:
+          DOCKERHUB_REPO: ${{ secrets.DOCKERHUB_REPO }}
+          IMAGE_TAG: ${{ github.sha }}
         run: |
-          IMG=${{ secrets.DOCKERHUB_REPO }}:${{ github.sha }}
+          IMG=${DOCKERHUB_REPO}:${IMAGE_TAG}
           docker build -t $IMG .
-          docker tag $IMG ${{ secrets.DOCKERHUB_REPO }}:latest
+          docker tag $IMG ${DOCKERHUB_REPO}:latest
 
       - name: Trivy Image Scan
+        env:
+          DOCKERHUB_REPO: ${{ secrets.DOCKERHUB_REPO }}
+          IMAGE_TAG: ${{ github.sha }}
         uses: aquasecurity/trivy-action@0.20.0
         with:
-          image-ref: ${{ secrets.DOCKERHUB_REPO }}:${{ github.sha }}
+          image-ref: ${{ env.DOCKERHUB_REPO }}:${{ env.IMAGE_TAG }}
           format: table
           ignore-unfixed: true
           exit-code: 1
           severity: HIGH,CRITICAL
 
       - name: Push image to Docker Hub
+        env:
+          DOCKERHUB_REPO: ${{ secrets.DOCKERHUB_REPO }}
+          IMAGE_TAG: ${{ github.sha }}
         run: |
-          docker push ${{ secrets.DOCKERHUB_REPO }}:${{ github.sha }}
-          docker push ${{ secrets.DOCKERHUB_REPO }}:latest
+          docker push ${DOCKERHUB_REPO}:${IMAGE_TAG}
+          docker push ${DOCKERHUB_REPO}:latest
 
       - name: Install cosign
         run: |
@@ -118,6 +127,8 @@ jobs:
         if: success()
         env:
           COSIGN_EXPERIMENTAL: "1"
+          DOCKERHUB_REPO: ${{ secrets.DOCKERHUB_REPO }}
+          IMAGE_TAG: ${{ github.sha }}
+          COSIGN_KEY: ${{ secrets.COSIGN_KEY }}
         run: |
-          # this will prompt if keyless isn't permitted; for CI you'd use key pair and COSIGN_PASSWORD secret
-          cosign sign --key ${{ secrets.COSIGN_KEY }} ${{ secrets.DOCKERHUB_REPO }}:${{ github.sha }} || true
+          cosign sign --key ${COSIGN_KEY} ${DOCKERHUB_REPO}:${IMAGE_TAG} || true
