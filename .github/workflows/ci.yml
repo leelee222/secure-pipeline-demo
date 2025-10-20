@@ -67,3 +67,4 @@ jobs:
           ignore-unfixed: true
           exit-code: 1
           severity: HIGH,CRITICAL
+
