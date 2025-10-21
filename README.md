@@ -24,7 +24,7 @@ This repo is part of my **3-Month DevSecOps Journey**.
 
 ---
 
-### 🔄 Week 2 – Container Security *(in progress)*
+### ✅ Week 2 – Container Security
 
 * [x] Dockerize the app with a secure Dockerfile
 * [x] Scan image with Trivy/Clair
@@ -34,12 +34,12 @@ This repo is part of my **3-Month DevSecOps Journey**.
 
 ---
 
-### 🔄 Week 3 – Pipeline Automation *(coming soon)*
+### 🔄 Week 3 – Pipeline Automation *(in progress)*
 
-* [ ] Connect CI/CD to Docker build
-* [ ] Add automated tests before build
-* [ ] Add automated security scans after build
-* [ ] Configure pipeline to fail on vulnerabilities
+* [x] Connect CI/CD to Docker build
+* [x] Add automated tests before build
+* [x] Add automated security scans after build
+* [x] Configure pipeline to fail on vulnerabilities
 * [ ] Deploy to Minikube
 
 ---
