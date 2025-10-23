@@ -34,17 +34,17 @@ This repo is part of my **3-Month DevSecOps Journey**.
 
 ---
 
-### 🔄 Week 3 – Pipeline Automation *(in progress)*
+### ✅ Week 3 – Pipeline Automation
 
 * [x] Connect CI/CD to Docker build
 * [x] Add automated tests before build
 * [x] Add automated security scans after build
 * [x] Configure pipeline to fail on vulnerabilities
-* [ ] Deploy to Minikube
+* [x] Deploy to Minikube
 
 ---
 
-### 🔄 Week 4 – Mini Project *(planned)*
+### 🔄 Week 4 – Mini Project *(in progress)*
 
 * [ ] Integrate all components (app + CI/CD + Docker + security)
 * [ ] Test full workflow
