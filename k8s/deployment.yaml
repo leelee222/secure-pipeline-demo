@@ -12,12 +12,20 @@ spec:
       labels:
         app: secure-pipeline-demo
     spec:
+      automountServiceAccountToken: false
       containers:
         - name: secure-pipeline-demo
           image: secure-pipeline-demo:latest
           imagePullPolicy: Never
           ports:
             - containerPort: 3000
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
           securityContext:
             runAsNonRoot: true
             runAsUser: 1000

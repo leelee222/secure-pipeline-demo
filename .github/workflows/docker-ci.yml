@@ -63,3 +63,4 @@ jobs:
         env:
           DOCKERHUB_REPO: ${{ secrets.DOCKERHUB_REPO }}
         run: docker push ${DOCKERHUB_REPO}:latest
+      
