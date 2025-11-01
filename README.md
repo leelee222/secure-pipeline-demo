@@ -52,10 +52,10 @@ This repo is part of my **3-Month DevSecOps Journey**.
 
 ### 🔄 Week 4 – Mini Project *(in progress)*
 
-* [ ] Integrate all components (app + CI/CD + Docker + security)
-* [ ] Test full workflow
-* [ ] Write final README + diagrams
-* [ ] Create short demo video
+* [x] Integrate all components (app + CI/CD + Docker + security)
+* [x] Test full workflow
+* [x] Write final README + diagrams
+* [x] Create short demo video
 
 ---
 
